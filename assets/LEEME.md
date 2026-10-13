@@ -13,3 +13,4 @@ Coloca aquí los archivos con estos nombres exactos. Si alguno falta, la web usa
 | `pergamino.jpg` | Pieza 6: pergamino |
 | `musica.mp3` | Música de fondo (en loop) |
 | `preview.jpg` | Vista previa del link en WhatsApp (1200×630, recorte del cuadro) |
+| `musica.mp3` | "Mysterious Celesta", Ashot Danielyan (Pixabay, licencia de Pixabay) |
