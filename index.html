@@ -569,7 +569,9 @@ if (reduce) {
 const musica = $('musica'), btnMusica = $('btnMusica');
 let hayMusica = false, fadeId = null;
 const VOLUMEN = 0.55;
-musica.addEventListener('canplay', () => { hayMusica = true; $('avisoSonido').hidden = false; }, { once: true });
+function musicaLista() { hayMusica = true; const a = $('avisoSonido'); if (a) a.hidden = false; }
+if (musica.readyState >= 2) musicaLista();
+else musica.addEventListener('canplay', musicaLista, { once: true });
 musica.addEventListener('error', () => { hayMusica = false; btnMusica.remove(); $('avisoSonido').remove(); });
 function estadoMusica(sonando) {
   btnMusica.classList.toggle('sonando', sonando);
