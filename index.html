@@ -486,7 +486,7 @@ footer{text-align:center;color:var(--tinta-suave);font-size:.9rem;margin-top:40p
 
     <section id="rsvp" aria-labelledby="rsvpTitulo">
       <h2 id="rsvpTitulo">Responder por lechuza</h2>
-      <p class="intro-rsvp">Tu respuesta llegará a Juan por WhatsApp.</p>
+      <p class="intro-rsvp">Tu respuesta llegará a Andrea por WhatsApp.</p>
 
       <form id="form" novalidate>
         <div class="campo">
@@ -525,7 +525,7 @@ footer{text-align:center;color:var(--tinta-suave);font-size:.9rem;margin-top:40p
 <script>
 /* ===================== CONFIGURACIÓN ===================== */
 const CONFIG = {
-  whatsapp: '506XXXXXXXX',   // ← número de Juan: 506 + 8 dígitos, sin espacios ni "+"
+  whatsapp: '50661095227',   // WhatsApp de Andrea: 506 + 8 dígitos, sin espacios ni "+"
   mapa: 'https://maps.app.goo.gl/Hb2tXUFidVPMkCpw8',
   fiesta: new Date('2026-10-31T19:00:00-06:00'),
   cierreRSVP: new Date('2026-10-29T00:00:00-06:00')  // acepta respuestas hasta el 28 inclusive
@@ -658,7 +658,7 @@ $('btnCal').addEventListener('click', () => {
 const form = $('form'), resp = $('respuesta');
 if (new Date() >= CONFIG.cierreRSVP) {
   form.hidden = true; resp.hidden = false;
-  resp.innerHTML = '<span class="grande">🦉</span>La lechuza ya no acepta respuestas. Escríbele a Juan por WhatsApp.';
+  resp.innerHTML = '<span class="grande">🦉</span>La lechuza ya no acepta respuestas. Escríbele a Andrea por WhatsApp.';
 }
 form.querySelectorAll('input[name=asiste]').forEach(r => r.addEventListener('change', () => {
   $('campoPersonas').hidden = form.asiste.value === 'no';
